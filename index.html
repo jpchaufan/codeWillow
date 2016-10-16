@@ -7,79 +7,88 @@
         <meta name="description" content="Hey I'm JP, an independent software developer and gardener. Come check out my work!">
         <meta name="author" content="JP">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imgs/logo_icon.png">
+        <link rel="shortcut icon" href="imgs/icons/logo_icon.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/layout.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">      
+        <link rel="stylesheet" type="text/css" href="css/content.css">      
     </head>
     <body>
-        
-        <header>
-            <div class="container">
-                <h1>codeWillow</h1>
-                <nav class="pc_nav">
-                    <a href="index.html" class="selected">HOME</a>
-                    <a href="blog.html">BLOG</a>
-                    <a href="about.html">ABOUT</a>
-                    <a href="apps.html">APPS</a>
-                    <a href="contact.html">CONTACT</a>
-                </nav>
-                <nav class="mobile_nav">
-                    <select>
-                        <option value="index.html">HOME</option>
-                        <option value="blog.html">BLOG</option>
-                        <option value="about.html">ABOUT</option>
-                        <option value="apps.html">APPS</option>
-                        <option value="contact.html">CONTACT</option>
-                    </select>
-                </nav>
-            </div>
-            
-        </header>
-        <main class="container">
-            <section>
-                <h2>What's New</h2>
-                <article class="recent_post">
-                    <a target="_blank" href="apps/rebels-in-space/index.html">
-                        <img src="imgs/rebels-in-space-ss.png" alt="Space shooter game." class="thumbnail">
-                        <p>New Game: Rebels in Space</p>
-                        <time>Sep 19, 2016</time>
+        <div class="container limitedHeight">
+            <header>
+                <div class="col-2">
+                    <a href="index.html">
+                        <h1>codeWillow</h1>
+                        <h2>HTML5 Games, grown right at home</h2>
                     </a>
-                </article>
-                <article class="recent_post">
-                    <a target="_blank" href="apps/word-hunt/index.html">
-                        <img src="imgs/word-hunt.png" alt="Word search game." class="thumbnail">
-                        <p>New Game: Word Hunt</p>
-                        <time>Aug 21, 2016</time>
-                    </a>
-                </article>
-                <article class="recent_post">
-                    <a href="blogs/2_canvas.html">
-                        <img src="imgs/liberatus-ss-1.jpg" alt="Exploring the dark maze..." class="thumbnail">
-                        <p>2 - Path of the Game Developer</p>
-                        <time>Aug 17, 2016</time>
-                    </a>
-                </article>
-                <article class="recent_post">
-                    <a href="blogs/1_initialize.html">
-                        <img src="imgs/lunar_rhythms.jpg" alt="Image of Lunar Rhythm Gardens, the farm I currently work and live at." class="thumbnail">
-                        <p>1 - Initialize!</p>
-                        <time>Aug 16, 2016</time>
-                    </a>
-                </article>
-                
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <time>Last Updated Sep 19, 2016</time>
-                <address><a href="mailto:codewillow@gmail.com">codewillow@gmail.com</a></address>
-            </div>
-            
-        </footer>
+                </div>
+                <div class="col-2">
+                    <nav class="pc_nav">
+                        <a href="index.html" class="selected">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="games.html">GAMES</a>
+                        <a href="contact.html">CONTACT</a>
+                    </nav>
+                    <nav class="mobile_nav">
+                        <select>
+                            <option value="index.html">HOME</option>
+                            <option value="about.html">ABOUT</option>
+                            <option value="games.html">GAMES</option>
+                            <option value="contact.html">CONTACT</option>
+                        </select>
+                    </nav>
+                </div>
+            </header>
+            <main class="limitedHeight">
+                <section class="col-2-flex">
+                    <h3>HTML5 Games</h3>
+                    <hr/>
+                    <p>
+                        <a href="games.html">HTML5 Games</a> are lightweight and adaptable. They are playable on the web browser, Mac, PC, iPhone, or Android. My games are all <em>home-made</em>, meaning I make them with much TLC. I have fun making games, and gamers have fun playing them.
+                    </p>
+                    <p>
+                        While I am still learning the fine art of programming, all my games will be <em>FREE</em>. So have fun, and don't forget to check in periodically and see what's new!
+                    </p>
+                </section>
+                <section class="col-2-flex overflow-scroll">
+                    <h3>What's New</h3>
 
+                    <div class="game-view">
+                        <h4>Cloud Hop</h4>
+                        <div class="thumb">
+                            <img src="imgs/thumbs/cloud-hop-thumb.png" alt="play Cloud Hop at codeWillow.com">
+                        </div>
+                        <div class="desc">
+                            <h4>Cloud Hop</h4>
+                            <p>Tags: platformer, casual, action</p>
+                            <a href="games/cloud_hop/index.html" target="_blank" class="button">PLAY</a>
+                        </div>
+                    </div>
 
+                    <div class="game-view">
+                        <h4>Comet Dodge</h4>
+                        <div class="thumb">
+                            <img src="imgs/thumbs/comet-dodge-thumb.png" alt="play Comet Dodge at codeWillow.com">
+                        </div>
+                        <div class="desc">
+                            <h4>Comet Dodge</h4>
+                            <p>Tags: casual, action</p>
+                            <a href="games/comet_dodge/index.html" target="_blank" class="button">PLAY</a>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+            <footer>
+                <a href="https://www.facebook.com/codewillow">
+                    <img class="social_media_fb"  src="imgs/icons/facebook_icon.png">
+                </a>
+                <a href="https://twitter.com/code_willow">
+                    <img class="social_media_tw"  src="imgs/icons/twitter_icon.png">
+                </a>
+            </footer>
+        </div>
        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+       <script type="text/javascript"> var currentPage = 'index'; </script>
        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

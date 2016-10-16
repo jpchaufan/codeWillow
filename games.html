@@ -24,37 +24,57 @@
                 <div class="col-2">
                     <nav class="pc_nav">
                         <a href="index.html">HOME</a>
-                        <a href="about.html" class="selected">ABOUT</a>
-                        <a href="games.html">GAMES</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="games.html" class="selected">GAMES</a>
                         <a href="contact.html">CONTACT</a>
                     </nav>
                     <nav class="mobile_nav">
                         <select>
                             <option value="index.html">HOME</option>
-                            <option value="about.html" selected>ABOUT</option>
-                            <option value="games.html">GAMES</option>
+                            <option value="about.html">ABOUT</option>
+                            <option value="games.html" selected>GAMES</option>
                             <option value="contact.html">CONTACT</option>
                         </select>
                     </nav>
                 </div>
             </header>
             <main>
-               <section class="col-1">
-                <h3>About Me</h3>
+               <section class="col-1" style="text-align: center;">
+                <h3>Games</h3>
+                <hr/>
+                <div id="searchTags"></div>
+                <input type="text" id="gamesSearch" class="searchBar" placeholder="Search codeWillow For Games"/><div class="button" onclick="runGamesSearch()">SEARCH</div>
+                <div id="gamesSearchResults"></div>
                 <hr/>
 
-                <img src="imgs/ship-1.png" alt="a sleek, red space ship from an html5 game" 
-                style="width: 50%; max-width: 200px; float: right;">
+                <div class="hideWhenSearching">
+                    <div class="game-view">
+                        <h4>Cloud Hop</h4>
+                        <div class="thumb">
+                            <img src="imgs/thumbs/cloud-hop-thumb.png" alt="play Cloud Hop at codeWillow.com">
+                        </div>
+                        <div class="desc">
+                            <h4>Cloud Hop</h4>
+                            <p>Tags: platformer, casual, action</p>
+                            <a href="games/cloud_hop/index.html" target="_blank" class="button">PLAY</a>
+                        </div>
+                    </div>
 
-                <p>
-                    Hi, my name is JP. I am a developer and designer running my own online business.
-                </p>
-                <p>
-                    I have been programming for just over a year and just recently started making <a href="games.html">HTML5 games</a>. I offer free games for your enjoyment, but plan to monetize my business as it develops.
-                </p>
-                <p>
-                   Oh, that's right, I almost forgot - I love nature and gardening, especially the permaculture approach to ecological gardening. I aim to use my online business to fund a permaculture garden and school, where nature and technology unite to create a sustainable and awesome future that's worth living in.
-                </p>
+                    <div class="game-view">
+                        <h4>Comet Dodge</h4>
+                        <div class="thumb">
+                            <img src="imgs/thumbs/comet-dodge-thumb.png" alt="play Comet Dodge at codeWillow.com">
+                        </div>
+                        <div class="desc">
+                            <h4>Comet Dodge</h4>
+                            <p>Tags: casual, action</p>
+                            <a href="games/comet_dodge/index.html" target="_blank" class="button">PLAY</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
                </section>
             </main>
             <footer>
@@ -67,8 +87,10 @@
             </footer>
         </div>
        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-       <script type="text/javascript"> var currentPage = 'about'; </script>
+       <script type="text/javascript"> var currentPage = 'games'; </script>
        <script type="text/javascript" src="js/main.js"></script>
+       <script type="text/javascript" SRC="js/gameSearch.js"></script>
+
     </body>
 </html>
 
